@@ -49,7 +49,7 @@ namespace FaderPlugin {
         [PluginService] public static TargetManager TargetManager { get; set; }
 
         public Plugin() {
-            Resolver.Initialize();
+            //Resolver.Initialize();
 
             LoadConfig(out config);
             config.OnSave += UpdateAddonVisibility;
